@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_56OdEYkGEeqQnppb3Ys7Ow" label="cicd_demo" description="" language="java" technicalLabel="CICD_DEMO" creationDate="2020-04-28T11:16:05.679+0800" author="_56OdEokGEeqQnppb3Ys7Ow" productVersion="Talend Data Fabric-7.3.1.20200219_1130" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/inocentesvictor/cicd_repository.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ">
+    <migrationTask xmi:id="_6mo3IIkGEeqQnppb3Ys7Ow" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_56OdEokGEeqQnppb3Ys7Ow" login="admin@company.com" firstName="admin" lastName="admin" type="DQ" additionnalData="{}"/>
+</xmi:XMI>
