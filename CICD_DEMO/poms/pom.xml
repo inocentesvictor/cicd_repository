@@ -12,6 +12,7 @@
     <module>code/routines</module>
     <module>code/beans</module>
     <module>jobs/process/test_job_0.1</module>
+    <module>jobs/process/test_job_0.2</module>
   </modules>
   <properties>
     <talend.project.name>CICD_DEMO</talend.project.name>
