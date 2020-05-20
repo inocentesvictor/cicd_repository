@@ -390,6 +390,11 @@
     "version" : "7.2.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.mdm.workbench.serverexplorer.migration.UnifyPasswordEncryption4MDMServerDefMigrationTask2019-10-10",
+    "breaks" : "7.3.1",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.metadata.managment.migration.AddXmiIdForContextItemMigrationTask",
     "breaks" : "6.2.0",
     "version" : "6.2.0",
@@ -1449,6 +1454,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.FixProjectResourceLink",
+    "breaks" : "5.1.1",
+    "version" : "5.1.2",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.repository.model.migration.FixUnevenItemContextParametersMigrationTask",
     "breaks" : "6.1.0",
     "version" : "6.4.0",
@@ -1458,6 +1468,11 @@
     "breaks" : "5.1.9",
     "version" : "5.1.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.GenerateJobPomMigrationTask",
+    "breaks" : "7.0.1",
+    "version" : "7.0.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.HandleOracleSchemaMigrationTask",
     "breaks" : "5.1.1",

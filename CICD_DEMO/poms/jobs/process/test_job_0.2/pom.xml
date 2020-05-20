@@ -13,33 +13,33 @@
   <version>0.2.0</version>
   <name>CICD_DEMO test_job-0.2.0 (0.2,Job Designs)</name>
   <properties>
-    <talend.job.type>Standard</talend.job.type>
-    <talend.job.date>${maven.build.timestamp}</talend.job.date>
-    <talend.pigudf.groupid>org.example.cicd_demo.pigudf</talend.pigudf.groupid>
-    <talend.job.folder></talend.job.folder>
-    <talend.job.context>Default</talend.job.context>
+    <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
+    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
+    <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
+    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
+    <talend.job.version>0.2</talend.job.version>
+    <talend.project.name.lowercase>cicd_demo</talend.project.name.lowercase>
     <talend.job.path>cicd_demo</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
-    <talend.job.stat>true</talend.job.stat>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
-    <talend.job.id>_vY9iIIkkEeqB7pevAPqvrg</talend.job.id>
-    <talend.job.version>0.2</talend.job.version>
-    <talend.job.framework></talend.job.framework>
-    <talend.routine.groupid>org.example.cicd_demo.code</talend.routine.groupid>
-    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
-    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.project.name.lowercase>cicd_demo</talend.project.name.lowercase>
-    <talend.project.id>0</talend.project.id>
-    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
-    <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <talend.product.version>7.3.1.20200219_1130</talend.product.version>
     <talend.project.name>CICD_DEMO</talend.project.name>
-    <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
-    <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.name>test_job</talend.job.name>
+    <talend.product.version>7.3.1.20200219_1130</talend.product.version>
     <talend.job.finalName>test_job_0_2</talend.job.finalName>
+    <talend.pigudf.groupid>org.example.cicd_demo.pigudf</talend.pigudf.groupid>
+    <talend.routine.groupid>org.example.cicd_demo.code</talend.routine.groupid>
+    <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.stat>false</talend.job.stat>
+    <talend.job.context>Default</talend.job.context>
+    <talend.job.date>${maven.build.timestamp}</talend.job.date>
+    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
+    <talend.job.name>test_job</talend.job.name>
+    <talend.job.id>_vY9iIIkkEeqB7pevAPqvrg</talend.job.id>
+    <talend.project.id>0</talend.project.id>
+    <talend.job.folder></talend.job.folder>
+    <talend.job.framework></talend.job.framework>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
     <dependency>
@@ -221,15 +221,15 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <routinespom.dir>${parentpom.dir}code/routines/</routinespom.dir>
-        <routinescode.dir>${parentpom.dir}code/routines/src/main/</routinescode.dir>
         <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
         <pigudfpom.dir>${parentpom.dir}code/pigudf/</pigudfpom.dir>
-        <templates.dir>${basedir}/src/main/templates/</templates.dir>
-        <poms.dir>${basedir}</poms.dir>
-        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
+        <routinescode.dir>${parentpom.dir}code/routines/src/main/</routinescode.dir>
         <parentpom.dir>${project.parent.relativePath}</parentpom.dir>
+        <templates.dir>${basedir}/src/main/templates/</templates.dir>
+        <routinespom.dir>${parentpom.dir}code/routines/</routinespom.dir>
         <pigudfcode.dir>${parentpom.dir}code/pigudf/src/main/</pigudfcode.dir>
+        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
+        <poms.dir>${basedir}</poms.dir>
       </properties>
     </profile>
     <profile>
@@ -247,12 +247,12 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
-        <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
         <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
-        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
+        <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
         <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
+        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
         <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
+        <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
       </properties>
     </profile>
     <profile>
