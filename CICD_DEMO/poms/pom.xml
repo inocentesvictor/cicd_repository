@@ -16,6 +16,7 @@
     <module>jobs/process/test_job_0.3</module>
     <module>jobs/process/test_job_0.4</module>
     <module>jobs/process/test_job_0.5</module>
+    <module>jobs/process/test_job_0.6</module>
   </modules>
   <properties>
     <talend.project.name>CICD_DEMO</talend.project.name>
