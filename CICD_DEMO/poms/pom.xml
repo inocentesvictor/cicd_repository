@@ -21,12 +21,12 @@
     <module>jobs/process/test_job_0.8</module>
   </modules>
   <properties>
-    <talend.project.name>CICD_DEMO</talend.project.name>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
-    <encoding>UTF-8</encoding>
     <signer.version>7.3.1</signer.version>
-    <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
+    <talend.project.name>CICD_DEMO</talend.project.name>
+    <encoding>UTF-8</encoding>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
     <pluginManagement>
