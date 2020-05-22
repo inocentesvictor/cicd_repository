@@ -20,14 +20,15 @@
     <module>jobs/process/test_job_0.7</module>
     <module>jobs/process/test_job_0.8</module>
     <module>jobs/process/test_job_0.9</module>
+    <module>jobs/process/test_job_0.10</module>
   </modules>
   <properties>
-    <signer.version>7.3.1</signer.version>
     <talend.project.name>CICD_DEMO</talend.project.name>
-    <encoding>UTF-8</encoding>
     <talend.docker.tag>${project.version}</talend.docker.tag>
-    <maven.deploy.skip>true</maven.deploy.skip>
+    <encoding>UTF-8</encoding>
+    <signer.version>7.3.1</signer.version>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
+    <maven.deploy.skip>true</maven.deploy.skip>
   </properties>
   <build>
     <pluginManagement>
